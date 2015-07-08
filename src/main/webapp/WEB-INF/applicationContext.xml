@@ -38,6 +38,7 @@
 	
 </bean>
 
-<jpa:repositories base-package="kr.young.jba.repository" />
+<jpa:repositories base-package="kr.young.jba.repository" entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager" />
+
 
 </beans>
